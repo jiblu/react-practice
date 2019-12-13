@@ -1,8 +1,9 @@
 import React from 'react';
+import './UserInput.css';
 
 const UserInput = (props) => {
     return (
-        <div>
+        <div className="UserInput">
             <input type="text" onChange={(e) => props.inputHandler(e)}></input>
         </div>
     );
