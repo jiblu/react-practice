@@ -4,7 +4,7 @@ import './Person.css';
 const person = (props) => {
     return (
         <div className="Person">
-            <p onClick={() => {props.switchNameHandler()}}>I am a person named {props.name} - {props.age}</p>
+            <p>I am a person named {props.name} - {props.age}</p>
             <p>{props.children}</p>
         </div>
     )
