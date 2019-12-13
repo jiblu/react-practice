@@ -11,8 +11,10 @@ class App extends Component {
 
   // this.inputHandler() = this.inputHandler.bind(this);
 
-  inputHandler(e) {
-    console.log(e.target.value)
+  inputHandler = (e) => {
+    this.setState({
+      userName: e.target.value
+    })
   }
 
   render() {
