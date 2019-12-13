@@ -1,9 +1,10 @@
 import React from "react";
+import './Person.css';
 
 const person = (props) => {
     return (
-        <div>
-            <p>I am a person named {props.name} - {props.age}</p>
+        <div className="Person">
+            <p onClick={() => {props.switchNameHandler()}}>I am a person named {props.name} - {props.age}</p>
             <p>{props.children}</p>
         </div>
     )
