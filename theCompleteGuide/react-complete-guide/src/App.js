@@ -44,14 +44,12 @@ class App extends Component {
     if (this.state.showPersons) {
       people = (
         <div>
-        <Person name={persons[0].name} age={persons[0].age}>I like cakes</Person>
-        <Person 
-          name={persons[1].name} 
-          age={persons[1].age}
-          click={this.switchNameHandler.bind(this, 'bound!')}>I like chocolate</Person>
-        <Person name={persons[2].name} age={persons[2].age}>I like pie</Person>
-        <Person name={"Jung"}></Person>
-      </div>
+          {this.state.persons.map( prsn => {
+            return <Person 
+              name={prsn.name} 
+              age={prsn.age}/>
+          })}
+        </div>
       )
     }
 
