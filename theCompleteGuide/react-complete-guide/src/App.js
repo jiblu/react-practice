@@ -12,16 +12,6 @@ class App extends Component {
     showPersons: false
   };
 
-  switchNameHandler = (newName) => {
-    console.log('Was clicked')
-    this.setState({
-      persons: [
-        { name: newName, age: 31 },
-        { name: 'Junghyun', age: 28},
-        { name: 'Munjidog', age: 2}
-      ]
-    })
-  }
 
   togglePersonHandler = () => {
     const doesShow = this.state.showPersons;
